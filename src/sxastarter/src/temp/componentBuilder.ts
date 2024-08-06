@@ -7,13 +7,45 @@ import { ComponentBuilder } from '@sitecore-jss/sitecore-jss-nextjs';
 
 import { BYOCWrapper, FEaaSWrapper } from '@sitecore-jss/sitecore-jss-nextjs';
 
-
+import * as CdpPageView from 'src/components/CdpPageView';
+import * as ColumnSplitter from 'src/components/ColumnSplitter';
+import * as Container from 'src/components/Container';
+import * as ContentBlock from 'src/components/ContentBlock';
+import * as FEAASScripts from 'src/components/FEAASScripts';
+import * as Footer from 'src/components/Footer';
+import * as Header from 'src/components/Header';
+import * as Image from 'src/components/Image';
+import * as LinkList from 'src/components/LinkList';
+import * as Navigation from 'src/components/Navigation';
+import * as PageContent from 'src/components/PageContent';
+import * as PartialDesignDynamicPlaceholder from 'src/components/PartialDesignDynamicPlaceholder';
+import * as Promo from 'src/components/Promo';
+import * as RichText from 'src/components/RichText';
+import * as RowSplitter from 'src/components/RowSplitter';
+import * as TextMedia from 'src/components/TextMedia';
+import * as Title from 'src/components/Title';
 
 export const components = new Map();
 components.set('BYOCWrapper', BYOCWrapper);
 components.set('FEaaSWrapper', FEaaSWrapper);
 
-
+components.set('CdpPageView', CdpPageView);
+components.set('ColumnSplitter', ColumnSplitter);
+components.set('Container', Container);
+components.set('ContentBlock', ContentBlock);
+components.set('FEAASScripts', FEAASScripts);
+components.set('Footer', Footer);
+components.set('Header', Header);
+components.set('Image', Image);
+components.set('LinkList', LinkList);
+components.set('Navigation', Navigation);
+components.set('PageContent', PageContent);
+components.set('PartialDesignDynamicPlaceholder', PartialDesignDynamicPlaceholder);
+components.set('Promo', Promo);
+components.set('RichText', RichText);
+components.set('RowSplitter', RowSplitter);
+components.set('TextMedia', TextMedia);
+components.set('Title', Title);
 
 export const componentBuilder = new ComponentBuilder({ components });
 
